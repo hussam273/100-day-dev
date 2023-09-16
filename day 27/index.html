@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Html Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Demo Form</h1>
+    </header>
+    <main>
+      <form action="#" method="GET">
+        <section>
+          <h2>Personal Details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your Email Adress</label>
+              <input type="email" name="email" id="useremail" />
+            </li>
+            <li>
+              <label for="user-password">Your password</label>
+              <input type="password" name="user-password" id="user-password" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>More Details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your Age</label>
+              <input type="number" name="age" id="userage" />
+            </li>
+            <li>
+              <label for="user-birthdate">Your Birthdate</label>
+              <input type="date" name="user-birthdate" id="user-birthdate" />
+            </li>
+            <li>
+              <label for="favorit-color">favorit color ?</label>
+              <select name="favoritcolor" id="favorit-color">
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="user-message">Your Message</label>
+          <textarea name="usermessage" id="user-message"></textarea>
+        </section>
+        <section>
+          <h2>How shoud we verify your account?</h2>
+          <ul>
+            <li class="form-verify-choice">
+              <input
+                type="radio"
+                id="verify-text-message"
+                name="verify"
+                value="text-message"
+              />
+              <label for="verify-text-message">Via text message</label>
+            </li>
+            <li class="form-verify-choice">
+              <input
+                type="radio"
+                id="verify-phone"
+                name="verify"
+                value="Phone"
+              />
+              <label for="verify-phone">Via a Phone call</label>
+            </li>
+            <li class="form-verify-choice">
+              <input
+                type="radio"
+                id="verify-email"
+                name="verify"
+                value="email"
+              />
+              <label for="verify-email">Via an Email</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How we contact you</h2>
+          <ul>
+            <li class="form-verify-choice">
+              <input
+                type="checkbox"
+                name="contact"
+                id="contact-email"
+                value="email"
+              />
+              <label for="contact-email">Contact via Email</label>
+            </li>
+            <li class="form-verify-choice">
+              <input
+                type="checkbox"
+                name="contact"
+                id="contact-phone"
+                value="phone"
+              />
+              <label for="contact-phone">Contact via Phone</label>
+            </li>
+          </ul>
+        </section>
+        <hr>
+        <section>
+          <div class="form-verify-choice">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms">Agree to terms</label>
+          </div>
+        </section>
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
