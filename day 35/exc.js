@@ -17,3 +17,7 @@ tittle.parentElement.removeChild(tittle);
 // move elements
 
 webBody.insertBefore(newP,webP);
+
+// inner html
+
+newP.innerHTML = "hi this is <strong>important!</strong>";
